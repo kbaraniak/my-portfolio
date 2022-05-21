@@ -4,5 +4,7 @@ labels: [bug]
 body:
 - type: markdown
   attributes:
-    value: |
-      Describe the problem you found on the website to fix it:
+    value: "If the error is related to the operation or display of the website, you've come to the right place"
+- type: textarea
+  attributes:
+    label: "Describe the problem you found on the website to fix it"
