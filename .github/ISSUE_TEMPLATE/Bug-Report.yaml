@@ -6,6 +6,17 @@ body:
 - type: markdown
   attributes:
     value: "If the error is related to the operation or display of the website, you've come to the right place"
+- type: checkboxes
+  id: chk_result
+  attributes:
+    label: "What's is the problem"
+    description: You may select more than one:
+    options:
+      - label: "index.html | Main Page"
+      - label: "main.js | Page Script"
+      - label: "defualt.css | Page Layout/Responsive"
+      - label: "other"
+      - label: "I don't know"
 - type: textarea
   attributes:
     label: "Describe the problem you found on the website to fix it"
