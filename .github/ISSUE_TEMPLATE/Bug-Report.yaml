@@ -1,5 +1,6 @@
 name: "Bug report 🐛"
 description: Report errors or unexpected behavior
+title: "Unknown bug"
 labels: [bug]
 body:
 - type: markdown
