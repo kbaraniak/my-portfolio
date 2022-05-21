@@ -1,0 +1,8 @@
+name: "Bug report 🐛"
+description: Report errors or unexpected behavior
+labels: [bug]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Describe the problem you found on the website to fix it:
