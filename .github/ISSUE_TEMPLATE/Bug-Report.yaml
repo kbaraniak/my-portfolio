@@ -10,7 +10,7 @@ body:
   id: chk_result
   attributes:
     label: "What's is the problem"
-    description: You may select more than one:
+    description: You may select more than one,
     options:
       - label: "index.html | Main Page"
       - label: "main.js | Page Script"
