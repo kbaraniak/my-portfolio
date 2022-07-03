@@ -14,7 +14,7 @@ body:
     options:
       - label: "index.html | Main Page"
       - label: "main.js | Page Script"
-      - label: "defualt.css | Page Layout/Responsive"
+      - label: "default.css | Page Layout/Responsive"
       - label: "Other"
       - label: "I don't know"
 - type: textarea
