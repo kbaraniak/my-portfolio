@@ -2,7 +2,7 @@ require('dotenv').config();
 import GitHub from 'github-api';
 const getRepos = () => {
    var gh = new GitHub({
-      token: 'process.env.GT_TOKEN'
+      token: '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'
    });
    const me = gh.getUser();
 
