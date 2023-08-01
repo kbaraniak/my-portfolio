@@ -1,3 +1,4 @@
+require('dotenv').config();
 import GitHub from 'github-api';
 const getRepos = () => {
    var gh = new GitHub({
