@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@layer utilities {
+   .selected:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+   }
+}
+
+main .project-img{
+   /* background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg); */
+   background-image: url("../img/laptop.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+main iframe{
+   position: relative;
+   left: 1px;
+   bottom: 16px;
+   width: 279px;
+   height: 171px;
+}
+
+main h1{
+   font-family: "Itim", cursive;
+   font-size: 31.135px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-top: -15px;
+}
+
+main .badges div{
+   width: 98px;
+   height: 98px;
+   transform: scale(0.69);
+   margin: -9px;
+   margin-top: -13px;
+}
+
+main .badges .html{
+   background-image: url("../img/badges/html.png");
+}
+
+main .badges .css{
+   background-image: url("../img/badges/css.png");
+}
+
+main .badges .js{
+   background-image: url("../img/badges/js.png");
+}
+
+#repositories .repository{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#repositories .repository img{
+   width: 64px;
+   border-radius: 6px;
+}
+
+#repositories .repository h4{
+   font-size: 28px;
+}
+
+#repositories{
+   /* flex flex-row flex-wrap justify-center */
+   margin-top: 5%;
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+   grid-column-gap: 27px;
+   grid-row-gap: 4px;
+}
+
+@media (max-width: 1358px) {
+   #repositories{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 23px;
+   }
+}
+@media (max-width: 924px) {
+   #repositories{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 23px;
+   }
+   #repositories .repository{
+      width: 85%;
+   }
+}

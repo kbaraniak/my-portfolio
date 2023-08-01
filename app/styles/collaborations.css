@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+main h3{
+   font-size: 4.5rem;
+}
+
+main .collaboration{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left:5%;
+   margin-right: 5%;
+   margin-top: 8%;
+}
+
+@layer utilities {
+   .selected:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+   }
+}
+
+@media (min-width: 1172px) {
+   .collaboration{
+      width: 28rem !important;
+      height: 26rem;
+   }
+}
