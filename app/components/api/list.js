@@ -4,7 +4,6 @@ const getRepos = () => {
    var gh = new GitHub({
       token: 'process.env.GT_TOKEN'
    });
-
    const me = gh.getUser();
 
    return me.listRepos()
