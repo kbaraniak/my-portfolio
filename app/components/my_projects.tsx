@@ -35,7 +35,7 @@ const Projects = () => {
             <div className="project-img w-70 h-60 bg-transparent mx-3 my-2 rounded-lg flex justify-center items-center">
                <div id="frame" className="social">
                   <div id="frame-header">
-                     <h2>Social Page</h2>
+                     <h2 className="font-itim">Social Page</h2>
                   </div>
                </div>
             </div>
