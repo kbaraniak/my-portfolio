@@ -1,16 +1,20 @@
 /** @type {import('next').NextConfig} */
+// @generated: @expo/next-adapter@2.1.52
+// Learn more: https://docs.expo.io/guides/using-nextjs/
+
+const { withExpo } = require("@expo/next-adapter");
+const withPlugins = require("next-compose-plugins");
+const withImages = require("next-images");
+const withFonts = require("next-fonts");
+const withTM = require("next-transpile-modules")(["react-native-web"]);
+
 const nextConfig = {
-    webpack: (config, options) => {
-        config.module.rules.push({
-            test: /\.(jpe?g|png|svg|gif|ico|eot|ttf|woff|woff2|mp4|pdf|webm|txt)$/,
-            type: 'asset/resource',
-            generator: {
-                filename: 'static/chunks/[path][name].[hash][ext]'
-            },
-        });
+  images: {
+    disableStaticImages: true,
+  },
+};
 
-        return config;
-    }
-}
-
-module.exports = nextConfig
+module.exports = withPlugins(
+  [withTM, withExpo, withImages, withFonts],
+  nextConfig
+);

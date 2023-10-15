@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import '../styles/my_projects.css';
 import '../styles/animation.css';
 
+import img_laptop from "../img/laptop.png"
+
 const Projects = () => {
    useEffect(() => {
       const proj1 = document.getElementById("project1");
@@ -32,7 +34,7 @@ const Projects = () => {
    return (
       <main className="flex flex-row flex-wrap justify-center">
          <div className="project" id="project1">
-            <div className="project-img w-70 h-60 bg-transparent mx-3 my-2 rounded-lg flex justify-center items-center">
+            <div className="project-img w-70 h-60 bg-transparent mx-3 my-2 rounded-lg flex justify-center items-center" style={{backgroundImage: `url(${img_laptop})`}}>
                <div id="frame" className="social">
                   <div id="frame-header">
                      <h2 className="font-itim">Social Page</h2>
