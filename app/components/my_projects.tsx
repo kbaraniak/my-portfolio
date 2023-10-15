@@ -3,9 +3,7 @@ import '../styles/my_projects.css';
 import '../styles/animation.css';
 
 const Projects = () => {
-   const [show, setShow] = useState(false);
    useEffect(() => {
-      setShow(true);
       const proj1 = document.getElementById("project1");
       const proj2 = document.getElementById("project2");
       const proj3 = document.getElementById("project3");
