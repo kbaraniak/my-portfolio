@@ -18,13 +18,39 @@ main .project-img{
    background-repeat: no-repeat;
 }
 
-main iframe{
+main iframe,
+main #frame{
    position: relative;
    left: 1px;
    bottom: 16px;
    width: 279px;
    height: 171px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+main #frame.social{
+   background-color: brown;
+}
+main #frame.tools{
+   background-color: rgb(44, 118, 153);
+}
+main #frame.npws{
+   background-color: #2b6e6d;
+}
+main #frame.oneros{
+   background-color: rgb(37, 179, 156);
+}
+
+
+
+main #frame-header{
+   font-size: 32px;
+}
+
+
+
 
 main h1{
    font-family: "Itim", cursive;
