@@ -4,6 +4,9 @@ import getRepos from "./api/new_list";
 
 const Repositories: React.FC = () => {
    const [repositoriesHtml, setRepositoriesHtml] = useState<string>("");
+   const [errorHtml, setErrorHtml] = useState<string>("");
+   const [valueLoaded, setValueLoaded] = useState(false);
+   const [valueError, setValueError] = useState(false);
 
    useEffect(() => {
       const fetchRepositories = async () => {
@@ -11,9 +14,12 @@ const Repositories: React.FC = () => {
             const html = await getRepos(); // Wait for the promise to resolve
             if (typeof html === "string") {
               setRepositoriesHtml(html);
+              setValueLoaded(true);
             } else {
               console.error("getRepos() did not return a string");
               console.error(html)
+              setValueError(true);
+              setErrorHtml(html);
             }
          } catch (error) {
             console.error(error);
@@ -26,7 +32,9 @@ const Repositories: React.FC = () => {
    return (
       <main className="test">
          {/* Render the repositories HTML */}
-         <div id="repositories" dangerouslySetInnerHTML={{ __html: repositoriesHtml }} />
+         {!valueLoaded && <p className="loading">Loading repositories ...</p>}
+         {valueError && <p className="loading red" dangerouslySetInnerHTML={{ __html: errorHtml }} /> }
+         {valueLoaded && <div id="repositories" dangerouslySetInnerHTML={{ __html: repositoriesHtml }} /> }
       </main>
    );
 };

@@ -1,0 +1,21 @@
+footer{
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+}
+
+footer h1{
+    font-size: 17px;
+}
+
+footer img{
+    width: 6%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

@@ -11,6 +11,15 @@ const withTM = require("next-transpile-modules")(["react-native-web"]);
 const nextConfig = {
   images: {
     disableStaticImages: true,
+    domains: ['upload.wikimedia.org'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        port: '',
+        pathname: '/wikipedia/commons/thumb**',
+      },
+    ],
   },
 };
 
