@@ -14,7 +14,7 @@
 
 main .project-img{
    /* background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg); */
-   background-image: url("../img/laptop.png");
+   background-image: url("/img/laptop.png");
    background-size: contain;
    background-repeat: no-repeat;
 }
@@ -71,15 +71,15 @@ main .badges div{
 }
 
 main .badges .html{
-   background-image: url("../img/badges/html.png");
+   background-image: url("/img/badges/html.png");
 }
 
 main .badges .css{
-   background-image: url("../img/badges/css.png");
+   background-image: url("/img/badges/css.png");
 }
 
 main .badges .js{
-   background-image: url("../img/badges/js.png");
+   background-image: url("/img/badges/js.png");
 }
 
 #repositories .repository{
