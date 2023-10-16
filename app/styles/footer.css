@@ -19,3 +19,9 @@ footer img{
     margin-right: auto;
     display: block;
 }
+
+@media not all and (min-width: 768px) {
+    footer{
+        display: none;
+    }
+}
