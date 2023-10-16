@@ -2,6 +2,7 @@ import '../styles/header.css'
 import React from 'react';
 import Link from 'next/link';
 
+
 function sendRequestTmp(){
    window.open("mailto:kbaraniak.dev@gmail.com?subject=New Request for create page")
 }
@@ -10,7 +11,11 @@ const Header = () => {
    return (
       <header>
       <div className="logo transition-all duration-300 hover:text-red-700 cursor-pointer">
-         <h1>kbaraniak</h1>
+         <h1>
+            <Link href="/">
+               kbaraniak
+            </Link>
+         </h1>
       </div>
       <div>
          <button className="px-4 py-2 font-semibold text-base bg-neutral-600 text-white rounded-md shadow-sm md:hover:scale-125 ease-in-out duration-150" onClick={sendRequestTmp}>[+] New Request</button>
