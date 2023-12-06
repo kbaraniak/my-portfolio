@@ -135,6 +135,7 @@ p.loading{
 @media (prefers-color-scheme: light) {
    main #frame-header{
       color: white;
+   }
 }
 
 
