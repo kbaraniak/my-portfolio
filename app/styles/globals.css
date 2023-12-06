@@ -26,6 +26,16 @@
   }
 }
 
+@font-face {
+  font-family: 'Jaapokki';
+  font-style: normal;
+  font-weight: 400;
+  src: local('JaapokkiRegula'), local('Jaapokki'),
+    url(https://fonts.cdnfonts.com/css/jaapokki)
+      format('woff2');
+  font-display: swap;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--background-hex);
