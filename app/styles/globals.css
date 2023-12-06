@@ -19,7 +19,7 @@
      color: white;
   }
   main #frame.oneros{
-     background-color: #176558;
+     background-color: #176558 !important;
   }
   main .badges div{
     filter: brightness(0.2);
