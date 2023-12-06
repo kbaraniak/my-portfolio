@@ -32,7 +32,7 @@
   font-weight: 400;
   src: local('JaapokkiRegula'), local('Jaapokki'),
     url(https://fonts.cdnfonts.com/css/jaapokki)
-      format('woff2');
+      format('woff');
   font-display: swap;
 }
 
