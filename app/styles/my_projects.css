@@ -44,14 +44,9 @@ main #frame.oneros{
    background-color: rgb(37, 179, 156);
 }
 
-
-
 main #frame-header{
    font-size: 32px;
 }
-
-
-
 
 main h1{
    font-family: "Itim", cursive;
@@ -136,3 +131,10 @@ p.loading{
       width: 85%;
    }
 }
+
+@media (prefers-color-scheme: light) {
+   main #frame-header{
+      color: white;
+}
+
+
