@@ -86,12 +86,12 @@ p.loading{
 #repositories .repository{
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
 }
 
 #repositories .repository img{
    width: 64px;
    border-radius: 6px;
+   margin-right: 14px;
 }
 
 #repositories .repository h4{
