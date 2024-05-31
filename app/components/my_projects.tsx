@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Project from './project';
 import '../styles/my_projects.css';
 import '../styles/animation.css';
 
@@ -77,6 +78,7 @@ const Projects = () => {
                <div className="js"></div>
             </div>
          </div>
+         <Project projectName="Test" projectID="project-3" projectDescription="Already" projectType="cloud" projectUrl="https://wp.pl"/>
       </main>
    );
 }
