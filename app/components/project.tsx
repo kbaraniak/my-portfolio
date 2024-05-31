@@ -20,4 +20,4 @@ function Project(projectName: string, projectID: string, projectDescription: str
   )
 }
 
-export default function Project;
+export default Project;
