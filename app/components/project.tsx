@@ -1,6 +1,14 @@
-import React from 'react'
+import React from 'eact'
 
-const Project = ({ projectName, projectID, projectDescription, projectType, projectUrl }) => {
+interface ProjectProps {
+  projectName: string;
+  projectID: string;
+  projectDescription: string;
+  projectType: string;
+  projectUrl: string;
+}
+
+const Project: React.FC<ProjectProps> = ({ projectName, projectID, projectDescription, projectType, projectUrl }) => {
   return (
      <div className="project" id={projectID}>
             <div className="project-img w-70 h-60 bg-transparent mx-3 my-2 rounded-lg flex justify-center items-center">
