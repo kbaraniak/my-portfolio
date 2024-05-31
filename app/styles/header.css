@@ -74,6 +74,10 @@ nav a {
    header .action1{
       display: flex;
    }
+
+   header .action1 button{
+      margin-left: 14px;
+   }
    
    main {
       flex: 1;
