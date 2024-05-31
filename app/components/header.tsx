@@ -10,16 +10,16 @@ function sendRequestTmp(){
 const Header = () => {
    return (
       <header>
-      <div className="logo transition-all duration-300 hover:text-red-700 cursor-pointer">
-         <h1>
-            <Link href="/">
-               kbaraniak
-            </Link>
-         </h1>
-      </div>
-      <div>
-         <button className="px-4 py-2 font-semibold text-base bg-neutral-600 text-white rounded-md shadow-sm md:hover:scale-125 ease-in-out duration-150" onClick={sendRequestTmp}>[+] New Request</button>
-      </div>
+         <div className="contents">
+            <div className="logo transition-all duration-300 hover:text-red-700 cursor-pointer">
+               <h1>
+                  <Link href="/">
+                     kbaraniak
+                  </Link>
+               </h1>
+            </div>
+            <button className="px-4 py-2 font-semibold text-base bg-neutral-600 text-white rounded-md shadow-sm md:hover:scale-125 ease-in-out duration-150" onClick={sendRequestTmp}>[+] New Request</button>
+         </div>
       <nav>
          <ul>
             <li>
