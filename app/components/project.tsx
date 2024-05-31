@@ -1,4 +1,4 @@
-import React from 'eact'
+import React from 'react'
 
 interface ProjectProps {
   projectName: string;
