@@ -11,7 +11,7 @@ const getRepos = async () => {
           const avatar = elm.owner.avatar_url;
           let repo = elm.name.substr(0,21);
           let url = elm.html_url;
-          const repositoryHtml = `<div class="repository bg-gray-700 h-24 w-98 rounded-lg hover:selected" onclick="window.open('${url}')">\n<div class="flex justify-center items-center mx-auto"><img src="${avatar}"/><h4>${repo}</h4></div></div>`;
+          const repositoryHtml = `<div class="repository bg-gray-700 h-24 w-98 rounded-lg hover:selected" onclick="window.open('${url}')">\n<div class="flex justify-center items-center mx-auto"><img class="max-md:hidden" src="${avatar}"/><h4>${repo}</h4></div></div>`;
           repositories.push(repositoryHtml);
         }
       }
