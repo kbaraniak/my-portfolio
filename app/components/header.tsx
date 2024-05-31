@@ -10,7 +10,7 @@ function sendRequestTmp(){
 const Header = () => {
    return (
       <header>
-         <div className="contents">
+         <div className="action1 contents">
             <div className="logo transition-all duration-300 hover:text-red-700 cursor-pointer">
                <h1>
                   <Link href="/">
