@@ -12,10 +12,11 @@ body:
     label: "What do you have an idea for"
     description: You may select more than one,
     options:
-      - label: "index.html | Main Page"
-      - label: "main.js | Page Script"
-      - label: "default.css | Page Layout/Responsive"
-      - label: "other"
+      - label: "HTML Code | Main Page"
+      - label: "Javascript/Typescript | Page Script"
+      - label: "Style | Page Layout/Responsive"
+      - label: "Other"
+      - label: "I don't know"
 - type: textarea
   attributes:
     label: "Describe your idea to add to the page"
