@@ -17,18 +17,21 @@ main .project-img{
    background-image: url("/img/laptop.png");
    background-size: contain;
    background-repeat: no-repeat;
+   position: relative;
+   top: 22px;
 }
 
 main iframe,
 main #frame{
    position: relative;
    left: 1px;
-   bottom: 16px;
-   width: 279px;
-   height: 171px;
+   bottom: 36px;
+   width: 227px;
+   height: 137px;
    display: flex;
    justify-content: center;
    align-items: center;
+   cursor: pointer
 }
 
 main #frame.social{
@@ -129,6 +132,28 @@ p.loading{
    }
    #repositories .repository{
       width: 85%;
+   }
+}
+
+@media (max-width: 640px) {
+   main .project-img{
+      top: 18px;
+   }
+   main #frame{
+      bottom: 29px;
+      width: 204px;
+      height: 123px;
+   }
+}
+
+@media (max-width: 524px) {
+   #repositories{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 23px;
+   }
+   #repositories .repository{
+      width: 70%;
    }
 }
 
