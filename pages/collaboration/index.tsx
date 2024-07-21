@@ -27,7 +27,7 @@ export default function Home() {
       <meta name="twitter:image" content="/favicon/share.png" />
     </Head>
     <div>
-      <Header />
+      <Header isActiveElm='collab'/>
       <Collaboration/>
       <Footer/>
     </div>
