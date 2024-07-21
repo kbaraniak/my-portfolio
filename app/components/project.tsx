@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { MutableRefObject, useRef } from 'react'
 import Link from 'next/link';
 
 interface ProjectProps {
@@ -12,7 +12,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ projectName, projectID, projectDescription, projectType, projectCategory, projectUrl }) => {
    const newUrl = "http://" + projectUrl;
-   const elmRef = useRef<HTMLInputElement>(null)
+   const elmRef = useRef() as MutableRefObject<HTMLDivElement>;
    function openProject() {
       elmRef.current.addEventListener("click", () => {
          window.location.href = newUrl
